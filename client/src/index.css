@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@300;400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(0, 0%, 27%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(0, 0%, 27%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(0, 0%, 27%);
+  --primary: hsl(210, 36%, 17%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(181, 51%, 36%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(0, 0%, 96%);
+  --muted-foreground: hsl(0, 0%, 45%);
+  --accent: hsl(47, 82%, 46%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 84%, 60%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(0, 0%, 90%);
+  --input: hsl(0, 0%, 90%);
+  --ring: hsl(181, 51%, 36%);
+  --font-sans: 'Open Sans', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --radius: 0.5rem;
+  --navy: hsl(210, 36%, 17%);
+  --teal: hsl(181, 51%, 36%);
+  --light-gray: hsl(0, 0%, 96%);
+  --charcoal: hsl(0, 0%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --golden-mustard: hsl(47, 82%, 46%);
+}
+
+.dark {
+  --background: hsl(222, 84%, 5%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 5%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(222, 84%, 5%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(210, 36%, 17%);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: hsl(181, 51%, 36%);
+  --secondary-foreground: hsl(0, 0%, 100%);
+  --muted: hsl(217, 32%, 17%);
+  --muted-foreground: hsl(215, 20%, 65%);
+  --accent: hsl(47, 82%, 46%);
+  --accent-foreground: hsl(0, 0%, 100%);
+  --destructive: hsl(0, 62%, 30%);
+  --destructive-foreground: hsl(0, 0%, 98%);
+  --border: hsl(217, 32%, 17%);
+  --input: hsl(217, 32%, 17%);
+  --ring: hsl(181, 51%, 36%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .font-heading {
+    font-family: var(--font-heading);
+  }
+  .font-body {
+    font-family: var(--font-sans);
+  }
+  .section-padding {
+    @apply py-20;
+  }
+  @media (max-width: 768px) {
+    .section-padding {
+      @apply py-12;
+    }
+  }
+  .btn-primary {
+    @apply bg-secondary hover:bg-accent text-secondary-foreground font-semibold py-4 px-8 rounded-lg text-lg transition-colors duration-200;
+  }
+  .btn-secondary {
+    @apply border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200;
+  }
+}
