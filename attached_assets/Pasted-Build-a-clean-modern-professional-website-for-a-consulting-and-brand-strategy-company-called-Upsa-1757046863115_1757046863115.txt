@@ -1,0 +1,72 @@
+Build a clean, modern, professional website for a consulting and brand strategy company called “Upsavvy Solutions.”
+
+Brand Identity
+	•	Business Name: Upsavvy Solutions
+	•	Tagline for Logo: Structure. Systems. Support.
+	•	Homepage Headline: Helping your business run smoothly and grow with confidence.
+	•	Brand Promise: At Upsavvy Solutions, we help small businesses and community organizations bring clarity, structure, and professionalism to their systems and programs so they can grow with confidence.
+
+Color Palette
+	•	Primary Colors: Navy (#1C2A3A), Teal (#2E8B8C)
+	•	Neutrals: Light Gray (#F5F5F5), Charcoal (#444444), White (#FFFFFF)
+	•	Accent: Golden Mustard (#D4A017)
+
+Fonts
+	•	Headings: Montserrat or Poppins (modern, bold)
+	•	Body: Open Sans or Raleway (clean, easy to read)
+
+Website Structure
+
+Navigation Menu: Home | Services | About | Game | Contact
+
+⸻
+
+Homepage Layout
+	1.	Hero Section:
+	•	Logo with tagline “Structure. Systems. Support.”
+	•	Headline: Helping your business run smoothly and grow with confidence.
+	•	Subtext: Smart, organized systems and professional support for small businesses and community organizations.
+	•	Call-to-Action button: Work With Us
+	2.	About Section:
+	•	Headline: Why Upsavvy Solutions?
+	•	Paragraph: Upsavvy Solutions brings clarity, structure, and professional systems to businesses and nonprofits. We take the overwhelm out of organization so you can focus on what you do best.
+	3.	Services Section:
+	•	Three cards/columns:
+	•	Business Systems Setup: LLC/EIN setup, handbooks, workflows, compliance.
+	•	Program & Event Structure: Schedules, handbooks, trackers, training materials.
+	•	Add-On Design Support: Flyers, Canva templates, branded docs, simple websites.
+	•	Button: See Full Services
+	4.	Client Outcomes Section:
+	•	Icons + text: Clarity, Professionalism, Confidence, More Time.
+	5.	Call to Action Section:
+	•	Headline: Ready to Get Organized?
+	•	Button: Book Your Consultation
+
+⸻
+
+Services Page
+	•	Business Systems Setup (flagship) with detailed inclusions and pricing.
+	•	Program & Event Structure (secondary) with detailed inclusions and pricing.
+	•	Add-On Design Support (optional).
+
+⸻
+
+Game Page (your chess game link)
+	•	Page Title: Game
+	•	Intro text: “At Upsavvy Solutions, creativity meets strategy. Here’s a look at one of our interactive projects.”
+	•	Embedded or linked chess game (or future games).
+	•	Space for future project links.
+
+⸻
+
+Contact Page
+	•	Simple form: Name, Email, Message.
+	•	Call to Action: “Let’s talk about how Upsavvy Solutions can support your business or program.”
+
+⸻
+
+Style Notes:
+	•	Lots of white space.
+	•	Alternating background colors (white, light gray) for each section.
+	•	Teal buttons with white text (hover = Mustard).
+	•	Professional stock photos of small business owners, organized workspaces, and community programs.
