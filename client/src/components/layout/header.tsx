@@ -11,7 +11,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "Services", href: "/services" },
     { name: "About", href: "/about" },
-    { name: "Game", href: "/game" },
+    { name: "Game", href: "https://code-tell-uno-NeneNecy.replit.app", external: true },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -39,20 +39,33 @@ export default function Header() {
           {/* Desktop Navigation */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`font-medium transition-colors duration-200 ${
-                    isActive(item.href)
-                      ? "text-primary"
-                      : "text-foreground hover:text-secondary"
-                  }`}
-                  data-testid={`nav-link-${item.name.toLowerCase()}`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) => 
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium transition-colors duration-200 text-foreground hover:text-secondary"
+                    data-testid={`nav-link-${item.name.toLowerCase()}`}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`font-medium transition-colors duration-200 ${
+                      isActive(item.href)
+                        ? "text-primary"
+                        : "text-foreground hover:text-secondary"
+                    }`}
+                    data-testid={`nav-link-${item.name.toLowerCase()}`}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
             </div>
           </div>
 
@@ -77,21 +90,35 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="md:hidden border-t border-border" data-testid="mobile-menu">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navigation.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
-                    isActive(item.href)
-                      ? "text-primary bg-muted"
-                      : "text-foreground hover:text-secondary hover:bg-muted"
-                  }`}
-                  onClick={() => setIsMobileMenuOpen(false)}
-                  data-testid={`mobile-nav-link-${item.name.toLowerCase()}`}
-                >
-                  {item.name}
-                </Link>
-              ))}
+              {navigation.map((item) =>
+                item.external ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block px-3 py-2 text-base font-medium transition-colors duration-200 text-foreground hover:text-secondary hover:bg-muted"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    data-testid={`mobile-nav-link-${item.name.toLowerCase()}`}
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className={`block px-3 py-2 text-base font-medium transition-colors duration-200 ${
+                      isActive(item.href)
+                        ? "text-primary bg-muted"
+                        : "text-foreground hover:text-secondary hover:bg-muted"
+                    }`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    data-testid={`mobile-nav-link-${item.name.toLowerCase()}`}
+                  >
+                    {item.name}
+                  </Link>
+                )
+              )}
             </div>
           </div>
         )}
