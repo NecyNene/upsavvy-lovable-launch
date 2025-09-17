@@ -93,3 +93,5 @@
     @apply border-2 border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground font-semibold py-4 px-8 rounded-lg text-lg transition-all duration-200;
   }
 }
+
+/* Repository version loaded successfully */
